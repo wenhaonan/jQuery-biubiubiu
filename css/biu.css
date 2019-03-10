@@ -1,0 +1,156 @@
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      background: #ccc;
+      overflow: hidden;
+    }
+
+    .battle-ground {
+      width: 474px;
+      height: 100%;
+      background: url(../img/bg.jpg) 100% 100% no-repeat;
+      position: absolute;
+      left: calc(50% - 237px);
+      text-align: center;
+    }
+
+    .start-game {
+      position: absolute;
+      width: 189px;
+      height: 62px;
+      background-image: url(../img/start.png);
+      background-size: 100% 100%;
+      top: 500px;
+      left: calc(50% - 94px);
+      cursor: pointer;
+    }
+
+    .model {
+      width: 200px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 30px;
+      color: #000;
+      background: #fff;
+      border-radius: 15px;
+      font-weight: bold;
+      margin: 80px auto;
+      cursor: pointer;
+    }
+
+    .model:first-child {
+      margin-top: 300px
+    }
+
+    .model:hover {
+      background: #f40;
+      color: #fff
+    }
+
+    .my-plane {
+      position: absolute;
+      width: 85px;
+      height: 66px;
+      background-size: 85px 66px
+    }
+
+    .biu-biu {
+      position: absolute;
+      width: 30px;
+      height: 60px;
+      background-image: url(../img/fire.png);
+      background-size: 100% 100%;
+    }
+
+    .enemy-small {
+      position: absolute;
+      width: 86px;
+      height: 64px;
+      background-image: url(../img/enemy_small.png);
+      background-size: 100% 100%;
+    }
+
+    .enemy-big {
+      position: absolute;
+      width: 86px;
+      height: 64px;
+      background-image: url(../img/enemy_big.png);
+      background-size: 100% 100%;
+    }
+
+    
+    .most-score {
+      position: absolute;
+      top: 0;
+      width: 400px;
+      height: 50px;
+      line-height: 50px;
+      color: #000;
+      font-size: 30px;
+    }
+    .score {
+      position: absolute;
+      top: 60px;
+      width: 400px;
+      height: 50px;
+      line-height: 50px;
+      color: #000;
+      font-size: 30px;
+    }
+
+    .esc{
+      position: absolute;
+      top: 200px;
+      left: 100px;
+      width: 400px;
+      height: 50px;
+      line-height: 50px;
+      color: #000;
+      font-size: 30px;
+    }
+
+    .boom-small {
+      position: absolute;
+      width: 64px;
+      height: 64px;
+      background: url(../img/boom_small.png) 100% 100% no-repeat;
+    }
+
+    .boom-big {
+      position: absolute;
+      width: 76px;
+      height: 76px;
+      background-image: url(../img/boom_big.png);
+      background-size: 100% 100%;
+    }
+
+    .more {
+      position: absolute;
+      width: 189px;
+      height: 62px;
+      background-image: url(../img/restart.png);
+      background-size: 100% 100%;
+      bottom: 20px;
+      left: calc(50% - 94px);
+      cursor: pointer;
+    }
+
+    .last-score{
+      position: absolute;
+      font-size: 40px;
+      color: #ccc;
+      bottom: 230px;
+      width: 400px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center
+    }
+
+    .biu-count{
+      position: absolute;
+      width: 55px;
+      height: 55px;
+      background-image: url(../img/biucount.png);
+      background-size: 100% 100%;
+    }
