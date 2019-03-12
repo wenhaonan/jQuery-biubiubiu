@@ -65,16 +65,16 @@
 
     .enemy-small {
       position: absolute;
-      width: 86px;
-      height: 64px;
+      width: 68px;
+      height: 51px;
       background-image: url(../img/enemy_small.png);
       background-size: 100% 100%;
     }
 
     .enemy-big {
       position: absolute;
-      width: 86px;
-      height: 64px;
+      width: 68px;
+      height: 51px;
       background-image: url(../img/enemy_big.png);
       background-size: 100% 100%;
     }
@@ -147,10 +147,20 @@
       text-align: center
     }
 
-    .biu-count{
+    .biu-prop{
       position: absolute;
       width: 55px;
       height: 55px;
-      background-image: url(../img/biucount.png);
       background-size: 100% 100%;
+    }
+
+    .blood{
+      position: absolute;
+      top: -20px;
+      width: 68px;
+      height: 6px;
+      border: 1px solid #f35c0c;
+      background-image: url(../img/lifeBar.png);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
     }
