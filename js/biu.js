@@ -48,7 +48,6 @@ function init() {
   $battleGround.append(startGame)
   //历史记录分数
   $('.most-score span').text(localStorage.getItem("historyScore") ? localStorage.getItem("historyScore") : "无历史最高分")
-
   startGame.on('click', modelChoice)
 }
 
@@ -58,7 +57,7 @@ function modelChoice() {
     $diff = $("<div class='model'>困难模式</div>"),
     $hell = $("<div class='model'>地狱模式</div>");
   $battleGround.append($easy, $diff, $hell)
-  $battleGround.css('background', 'url(./img/bg.jpg) 100% 100% no-repeat')
+  $battleGround.css('backgroundImage', 'url(./img/bg.jpg)')
 
   //选择模式
   $('.model').on("click", function (e) {
@@ -72,7 +71,7 @@ function modelChoice() {
 //页面跳转
 function gameStart(model, e) {
   $battleGround.empty()
-  $battleGround.css("background", `url(./img/bg${model}.jpg) 100% 100% no-repeat`)
+  $battleGround.css("backgroundImage", `url(./img/bg${model}.jpg)`)
   //背景音效
   let startAudio = document.createElement('audio')
   startAudio.autoplay = true;
@@ -447,7 +446,7 @@ function gameOver() {
 
 //再来一局
 function oneMore() {
-  $battleGround.css("background", "url(./img/over.jpg) 100% 100% no-repeat")
+  $battleGround.css("backgroundImage", "url(./img/over.jpg)")
   let $more = $("<div class='more'></div>")
   let $lastscore = $('<div class="last-score"><div>')
   $lastscore.text(score)
