@@ -50,9 +50,9 @@
 
     .my-plane {
       position: absolute;
-      width: 85px;
-      height: 66px;
-      background-size: 85px 66px
+      width: 68px;
+      height: 52px;
+      background-size: 100% 100%
     }
 
     .biu-biu {
@@ -65,16 +65,16 @@
 
     .enemy-small {
       position: absolute;
-      width: 68px;
-      height: 51px;
+      width: 54px;
+      height: 40px;
       background-image: url(../img/enemy_small.png);
       background-size: 100% 100%;
     }
 
     .enemy-big {
       position: absolute;
-      width: 68px;
-      height: 51px;
+      width: 54px;
+      height: 40px;
       background-image: url(../img/enemy_big.png);
       background-size: 100% 100%;
     }
@@ -110,21 +110,32 @@
       font-size: 30px;
     }
 
+    @keyframes a {
+        from{
+          opacity: 1;
+        }
+        to{
+          opacity: 0;
+        }
+    }
+
     .boom-small {
       position: absolute;
       width: 64px;
       height: 64px;
       background: url(../img/boom_small.png) 100% 100% no-repeat;
+      animation: a 1s
     }
 
     .boom-big {
       position: absolute;
       width: 76px;
       height: 76px;
-      background-image: url(../img/boom_big.png);
-      background-size: 100% 100%;
+      background: url(../img/boom_big.png) 100% 100% no-repeat;
+      animation: a 1s
     }
 
+    
     .more {
       position: absolute;
       width: 189px;
@@ -149,18 +160,33 @@
 
     .biu-prop{
       position: absolute;
-      width: 55px;
-      height: 55px;
+      width: 40px;
+      height: 40px;
       background-size: 100% 100%;
     }
 
-    .blood{
+    .enemy-biu{
+      position: absolute;
+      width: 23px;
+      height: 23px;
+      background-image: url(../img/enemyBiu.png);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+    
+    .blood,
+    .my-plane-blood
+    {
       position: absolute;
       top: -20px;
-      width: 68px;
+      width: 54px;
       height: 6px;
       border: 1px solid #f35c0c;
       background-image: url(../img/lifeBar.png);
       background-size: 100% 100%;
       background-repeat: no-repeat;
+    }
+
+    .my-plane-blood{
+      left: 7px
     }
